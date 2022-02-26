@@ -7,7 +7,7 @@
 
 Name:		gnome-shell-extension-dock-from-dash
 Version:	22
-Release:	1%{?dist}
+Release:	2%{?dist}
 Summary:	GNOME Shell Extension - Dock From Dash by fthx
 
 License:	GPLv2+
@@ -32,7 +32,7 @@ rm dock-from-dash@fthx.zip
 mkdir -p %{buildroot}%{_datadir}/gnome-shell/extensions
 mkdir -p %{buildroot}/usr/share/licenses/%{NAME}
 cp LICENSE %{buildroot}/usr/share/licenses/gnome-shell-extension-dock-from-dash/
-cp -ar %{_builddir} %{buildroot}%{_datadir}/gnome-shell/extensions/%{extuuid}
+cp -ar dock-from-dash-%{version} %{buildroot}%{_datadir}/gnome-shell/extensions/%{extuuid}
 
 %files
 %license LICENSE
