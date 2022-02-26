@@ -32,7 +32,7 @@ rm dock-from-dash@fthx.zip
 mkdir -p %{buildroot}%{_datadir}/gnome-shell/extensions
 mkdir -p %{buildroot}/usr/share/licenses/%{NAME}
 cp LICENSE %{buildroot}/usr/share/licenses/gnome-shell-extension-dock-from-dash/
-cp -ar %{buildroot}/dock-from-dash-%{version} %{buildroot}%{_datadir}/gnome-shell/extensions/%{extuuid}
+cp -ar %{buildroot}/* %{buildroot}%{_datadir}/gnome-shell/extensions/%{extuuid}
 
 %files
 %license LICENSE
