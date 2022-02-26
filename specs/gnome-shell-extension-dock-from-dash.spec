@@ -29,7 +29,7 @@ Native GNOME Shell click behavior is modified: minimize if one window is open, o
 rm dock-from-dash@fthx.zip
 
 %install
-mkdir -p %{buildroot}%{_datadir}/gnome-shell/extensions
+mkdir -p %{buildroot}%{_datadir}/gnome-shell/extensions/%{extuuid}
 mkdir -p %{buildroot}/usr/share/licenses/%{NAME}
 cp LICENSE %{buildroot}/usr/share/licenses/gnome-shell-extension-dock-from-dash/
 cp -ar %{buildroot}/* %{_datadir}/gnome-shell/extensions/%{extuuid}
