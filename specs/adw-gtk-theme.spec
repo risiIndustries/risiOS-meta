@@ -21,8 +21,8 @@ Note that this is not a 100% accurate port.
 
 %install
 mkdir -p %{buildroot}%{_datadir}/themes
-cp -R adw-gtk3 %{buildroot}%{_datadir}/themes
-cp -R adw-gtk3-dark %{buildroot}%{_datadir}/themes
+cp -R adw-gtk3 %{buildroot}%{_datadir}/themes/adw-gtk3
+cp -R adw-gtk3-dark %{buildroot}%{_datadir}/themes/adw-gtk3-dark
 
 %files
 %{buildroot}%{_datadir}/themes/adw-gtk3
