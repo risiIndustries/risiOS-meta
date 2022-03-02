@@ -25,8 +25,8 @@ cp -a adw-gtk3 %{buildroot}%{_datadir}/themes
 cp -a adw-gtk3-dark %{buildroot}%{_datadir}/themes
 
 %files
-%{buildroot}%{_datadir}/themes/adw3-gtk
-%{buildroot}%{_datadir}/themes/adw3-gtk-dark
+%{buildroot}%{_datadir}/themes/adw-gtk3
+%{buildroot}%{_datadir}/themes/adw-gtk3-dark
 
 %changelog
 * Wed Mar 2 2022 PizzaLovingNerd
