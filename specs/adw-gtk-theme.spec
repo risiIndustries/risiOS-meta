@@ -17,7 +17,7 @@ The default theme from libadwaita ported to GTK-3
 Note that this is not a 100% accurate port.
 
 %prep
-%autosetup -n adw-gtk3v%{dashedversion}
+%autosetup -cn adw-gtk3v%{dashedversion}
 
 %install
 mkdir -p %{buildroot}%{_datadir}/themes
