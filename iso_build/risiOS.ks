@@ -3,28 +3,38 @@
 repo --name="risiOS" --baseurl=https://download.copr.fedorainfracloud.org/results/risi/risiOS/fedora-35-$basearch
 
 %packages
-
-file-roller
+# risiOS features/system stuff
+adw-gtk-theme
 anaconda-risi
+gnome-backgrounds
 plymouth-theme-risi-spinner
-geary
-drawing
-gnome-music
-risi-tweaks
-risios-release
 risi-gnome-session
+risi-script
+risi-tweaks
+risi-welcome
+risios-release
 risios-logos
 risios-repositories
 risios-35-backgrounds
+webapp-manager
+
+# Applications
+drawing
+file-roller
+geary
+gnome-music
+
+# Removed
 -abrt-desktop
+-desktop-backgrounds-gnome
 -gnome-classic-session
--fedora-release-workstation
--fedora-workstation-backgrounds
--f35-backgrounds-*
--rhythmbox
 -gnome-session-xsession
 -gnome-session-wayland-session
 -gnome-tour
+-f35-backgrounds-*
+-fedora-release-workstation
+-fedora-workstation-backgrounds
+-rhythmbox
 
 %end
 
