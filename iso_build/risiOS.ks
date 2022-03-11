@@ -27,13 +27,16 @@ gnome-music
 
 # Removed
 -abrt-desktop
--gnome-classic-session
--gnome-extensions-app
--gnome-tour
 -desktop-backgrounds-gnome
--f35-backgrounds-base
+-gnome-classic-session
 -fedora-release-workstation
 -fedora-workstation-backgrounds
 -rhythmbox
 
 %end
+
+# Edit fedora-welcome to use risiOS name (code from Ultramarine, thanks)
+sed -i 's/Fedora/risiOS/g' /usr/share/anaconda/gnome/fedora-welcome
+cat << EOF >>/home/liveuser/Desktop/liveinst.desktop
+visibleName=Install risiOS
+EOF
