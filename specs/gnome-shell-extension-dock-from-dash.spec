@@ -26,7 +26,6 @@ Native GNOME Shell click behavior is modified: minimize if one window is open, o
 
 %prep
 %autosetup -n dock-from-dash-%{version}
-rm dock-from-dash@fthx.zip
 
 %install
 mkdir -p %{buildroot}%{_datadir}/gnome-shell/extensions/%{extuuid}
