@@ -29,6 +29,7 @@ gnome-music
 -abrt-desktop
 -desktop-backgrounds-gnome
 -gnome-classic-session
+-gnome-tour
 -fedora-release-workstation
 -fedora-workstation-backgrounds
 -rhythmbox
@@ -41,4 +42,7 @@ sed -i 's/Fedora/risiOS/g' /usr/share/anaconda/gnome/fedora-welcome
 cat << EOF >>/home/liveuser/Desktop/liveinst.desktop
 visibleName=Install risiOS
 EOF
+
+# Prevent risiWelcome from popping up on Live Media
+echo "[io.risi.Welcome]\nstartup-show = false" >> /usr/share/glib-2.0/schemas/00_risi.gschema.override
 %end
