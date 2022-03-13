@@ -44,5 +44,5 @@ visibleName=Install risiOS
 EOF
 
 # Prevent risiWelcome from popping up on Live Media
-echo "[io.risi.Welcome]\nstartup-show = false" >> /usr/share/glib-2.0/schemas/00_risi.gschema.override
+printf "[io.risi.Welcome]\nstartup-show = false" >> /usr/share/glib-2.0/schemas/00_risi.gschema.override
 %end
