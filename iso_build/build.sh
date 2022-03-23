@@ -1,4 +1,4 @@
-VERSION=35
+VERSION=36
 DATE=$(date +"%Y%m%d")
 
 rm -rf fedora-kickstarts
