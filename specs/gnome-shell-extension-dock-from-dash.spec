@@ -6,7 +6,7 @@
 %global srcdir		%{_builddir}/%{gitname}-%{version}/src
 
 Name:		gnome-shell-extension-dock-from-dash
-Version:	28
+Version:	31
 Release:	1%{?dist}
 Summary:	GNOME Shell Extension - Dock From Dash by fthx
 
