@@ -8,7 +8,7 @@ rm risiOS-Live-$VERSION-$DATE.iso
 git clone https://pagure.io/fedora-kickstarts.git --branch=f$VERSION
 cp risiOS.ks fedora-kickstarts/risiOS.ks
 cd fedora-kickstarts
-ksflatten -v, --config risiOS.ks -o ./risiOS-$VERSION-live-flat.ks --version f35
+ksflatten -v, --config risiOS.ks -o ./risiOS-$VERSION-live-flat.ks --version f$VERSION
 
 mock --init fedora-$VERSION-x86_64
 mock --root fedora-$VERSION-x86_64 --install lorax-lmc-novirt nano sed
@@ -19,4 +19,4 @@ mock --root fedora-$VERSION-x86_64 --copyout /var/tmp/lmc-logs/anaconda/anaconda
 
 mock --root fedora-$VERSION-x86_64 --clean
 cd ..
-# rm -rf fedora-kickstarts
+rm -rf fedora-kickstarts
