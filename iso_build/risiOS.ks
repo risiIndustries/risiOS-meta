@@ -1,6 +1,6 @@
 %include fedora-live-workstation.ks
 
-repo --name="risiOS" --baseurl=https://download.copr.fedorainfracloud.org/results/risi/risiOS/fedora-35-$basearch
+repo --name="risiOS" --baseurl=https://download.copr.fedorainfracloud.org/results/risi/risiOS/fedora-36-$basearch --cost=1
 
 %packages
 
@@ -13,10 +13,11 @@ risi-settings
 risi-script
 risi-tweaks
 risi-welcome
+risi-zsh-plugins
 risios-release
 risios-logos
 risios-repositories
-risios-35-backgrounds
+risios-36-backgrounds
 webapp-manager
 
 # Applications
