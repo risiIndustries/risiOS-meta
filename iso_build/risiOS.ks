@@ -18,6 +18,7 @@ risios-release
 risios-logos
 risios-repositories
 risios-36-backgrounds
+risios-bookmarks
 webapp-manager
 
 # Applications
@@ -34,6 +35,7 @@ gnome-music
 -fedora-release-workstation
 -fedora-workstation-backgrounds
 -rhythmbox
+-mediawriter
 
 %end
 
