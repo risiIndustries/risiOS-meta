@@ -1,4 +1,4 @@
-%global dashedversion   1-6
+%global dashedversion   1-9
 
 Name:		adw-gtk-theme
 # make sure to update dashedversion too
