@@ -6,14 +6,13 @@
 %global srcdir		%{_builddir}/%{gitname}-%{version}/src
 
 Name:		gnome-shell-extension-dock-from-dash
-Version:	59
+Version:	56
 Release:	1%{?dist}
 Summary:	GNOME Shell Extension - Dock From Dash by fthx
 
 License:	GPLv2+
 URL:		https://extensions.gnome.org/extension/4703/dock-from-dash/
 Source0:	%{giturl}/archive/refs/tags/v%{version}.zip
-
 BuildArch:	noarch
 BuildRequires:  glib2
 Requires:	gnome-shell-extension-common
