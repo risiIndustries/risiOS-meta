@@ -1,6 +1,7 @@
 %include fedora-live-workstation.ks
 
 repo --name="risiOS" --baseurl=https://download.copr.fedorainfracloud.org/results/risi/risiOS/fedora-36-$basearch --cost=1
+repo --name="OnlyOffice" --baseurl=http://download.onlyoffice.com/repo/centos/main/noarch/
 
 %packages
 
@@ -19,13 +20,13 @@ risios-logos
 risios-repositories
 risios-36-backgrounds
 risios-bookmarks
+risios-skel
 webapp-manager
 
 # Applications
 drawing
 file-roller
-geary
-gnome-music
+onlyoffice-desktopeditors
 
 # Removed
 -abrt-desktop
@@ -36,6 +37,7 @@ gnome-music
 -fedora-workstation-backgrounds
 -rhythmbox
 -mediawriter
+-gnome-boxes
 
 %end
 
