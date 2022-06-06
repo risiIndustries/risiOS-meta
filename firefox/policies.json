@@ -1,0 +1,18 @@
+{
+  "policies": {
+    "SearchEngines": {
+      "Add": [
+        {
+          "Name": "risiSearx",
+          "URLTemplate": "https://searx.risi.io/search?q={searchTerms}",
+          "Method": "GET",
+          "IconURL": "https://searx.risi.io/favicon.ico",
+          "Alias": "risiSearx",
+          "Description": "risiSearx is our privacy friendly SearXNG instance",
+          "SuggestURLTemplate": "https://searx.risi.io/autocompleter?q={searchTerms}"
+        }
+      ],
+			"Default": "risiSearx"
+    }
+  }
+}
