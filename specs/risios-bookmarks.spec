@@ -4,7 +4,7 @@ Release:        %autorelease
 Summary:        risiOS bookmarks
 License:        GFDL
 URL:            http://risi.io/
-Source0:        https://raw.githubusercontent.com/risiOS/risiOS-meta/main/bookmarks.html
+Source0:        https://raw.githubusercontent.com/risiOS/risiOS-meta/main/firefox/policies.json
 BuildArch:      noarch
 Provides:       system-bookmarks
  
