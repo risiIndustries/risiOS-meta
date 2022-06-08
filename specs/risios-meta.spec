@@ -7,7 +7,6 @@ URL:            http://risi.io/
 Source0:        https://github.com/risiOS/risiOS-meta/archive/refs/heads/main.tar.gz
 BuildArch:      noarch
 
-Requires:		risi-zsh
 Requires:		risios-bookmarks
 Requires:		risios-logos
 Requires:		risios-release
@@ -15,6 +14,7 @@ Requires:		risifetch
 Requires:		zsh
 Requires:		risios-repositories
 
+Recommends:		risi-zsh-plugins
 Recommends:		adw-gtk-theme
 Recommends: 	gnome-shell-extension-dock-from-dash
 Recommends: 	gnome-shell-extension-risi-gnome
