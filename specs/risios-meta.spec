@@ -40,7 +40,8 @@ cp -a firefox/policies.json %{buildroot}%{_libdir}/firefox/distribution
 
 %files
 %{_libdir}/firefox/distribution/policies.json
-%dir %{_sysconfdir}/skel/Templates/*
+%dir %{_sysconfdir}/skel/Templates
+%{_sysconfdir}/skel/Templates/*
  
 %changelog
 %autochangelog
