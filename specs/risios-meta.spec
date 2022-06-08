@@ -39,7 +39,7 @@ cp -a skel %{buildroot}%{_sysconfdir}
 cp -a firefox/policies.json %{buildroot}%{_libdir}/firefox/distribution
 
 %files
-%{buildroot}%{_libdir}/firefox/distribution
+%{_libdir}/firefox/distribution/policies.json
 %dir %{_sysconfdir}/skel/Templates/*
  
 %changelog
