@@ -28,7 +28,7 @@ Recommends:		mozilla-risiSearx
 Provides some extra files by default in the home dir.
  
 %prep
-%autosetup -n %{name}-main
+%autosetup -n risiOS-meta-main
 
 %build
 %install
