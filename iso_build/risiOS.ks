@@ -23,6 +23,7 @@ risios-bookmarks
 webapp-manager
 mozilla-risiSearx
 risios-meta
+chromium
 
 # Applications
 drawing
@@ -40,6 +41,11 @@ onlyoffice-desktopeditors
 -mediawriter
 -gnome-boxes
 -fedora-bookmarks
+-cheese
+-libreoffice*
+-unoconv
+-firefox
+
 
 %end
 
