@@ -1,6 +1,6 @@
 Name:           risios-meta
 Version:        36
-Release:        %autorelease
+Release:        2
 Summary:        General files for risiOS
 License:        GPL3
 URL:            http://risi.io/
@@ -37,7 +37,7 @@ cp -a skel %{buildroot}%{_sysconfdir}
 cp chromium-risios.json %{buildroot}%{_sysconfdir}/chromium/policies/recommended/risios.json
 
 %files
-%{_libdir}/firefox/distribution/policies.json
+%{_sysconfdir}/chromium/policies/recommended/risios.json
 %dir %{_sysconfdir}/skel/Templates
 %{_sysconfdir}/skel/Templates/*
  
