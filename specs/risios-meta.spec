@@ -22,7 +22,6 @@ Recommends: 	risi-script
 Recommends:		risi-settings
 Recommends:		risi-tweaks
 Recommends:		risi-welcome
-Recommends:		mozilla-risiSearx
 
 %description
 Provides some extra files by default in the home dir.
@@ -32,11 +31,10 @@ Provides some extra files by default in the home dir.
 
 %build
 %install
-%{__mkdir_p} %{buildroot}%{_sysconfdir}
-%{__mkdir_p} %{buildroot}%{_libdir}/firefox/distribution
+%{__mkdir_p} %{buildroot}%{_sysconfdir}/chromium/policies/recommended
 
 cp -a skel %{buildroot}%{_sysconfdir}
-cp -a firefox/policies.json %{buildroot}%{_libdir}/firefox/distribution
+cp chromium-risios.json %{buildroot}%{_sysconfdir}/chromium/policies/recommended/risios.json
 
 %files
 %{_libdir}/firefox/distribution/policies.json

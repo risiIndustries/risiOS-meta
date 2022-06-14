@@ -1,0 +1,13 @@
+{
+	"DefaultSearchProviderEncodings": [
+		"UTF-8",
+		"UTF-16"
+	],
+	"DefaultSearchProviderIconURL": "https://searx.risi.io/favicon.ico",
+	"DefaultSearchProviderKeyword": "rs",
+	"DefaultSearchProviderName": "risiSearx",
+	"DefaultSearchProviderNewTabURL": "https://start.risi.io",
+	"DefaultSearchProviderSearchURL": "https://searx.risi.io/search?q={searchTerms}",
+	"DefaultSearchProviderSuggestURL": "https://searx.risi.io/autocompleter?q={searchTerms}",
+	"DefaultSearchProviderEnabled": true
+}

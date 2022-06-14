@@ -1,6 +1,6 @@
 %include fedora-live-workstation.ks
 
-repo --name="risiOS" --baseurl=https://download.copr.fedorainfracloud.org/results/risi/risiOS/fedora-36-$basearch --cost=1
+repo --name="risiOS" --baseurl=https://download.copr.fedorainfracloud.org/results/risi/risiOS/fedora-36-$basearch --cost=1 --priority=50
 repo --name="OnlyOffice" --baseurl=http://download.onlyoffice.com/repo/centos/main/noarch/
 
 %packages
@@ -20,8 +20,9 @@ risios-logos
 risios-repositories
 risios-36-backgrounds
 risios-bookmarks
-risios-skel
 webapp-manager
+mozilla-risiSearx
+risios-meta
 
 # Applications
 drawing
@@ -38,6 +39,7 @@ onlyoffice-desktopeditors
 -rhythmbox
 -mediawriter
 -gnome-boxes
+-fedora-bookmarks
 
 %end
 
