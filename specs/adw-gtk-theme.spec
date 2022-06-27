@@ -1,9 +1,9 @@
-%global dashedversion   1-9
+%global dashedversion   3-1
 
 Name:		adw-gtk-theme
 # make sure to update dashedversion too
-Version:	1.9
-Release:	1%{?dist}
+Version:	3.1
+Release:	2%{?dist}
 Summary:	GNOME Shell Extension - Dock From Dash by fthx
 
 License:	GPLv2+
