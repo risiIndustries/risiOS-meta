@@ -1,7 +1,6 @@
 %include fedora-live-workstation.ks
 
 repo --name="risiOS" --baseurl=https://download.copr.fedorainfracloud.org/results/risi/risiOS/fedora-36-$basearch --cost=1 --priority=50
-repo --name="OnlyOffice" --baseurl=http://download.onlyoffice.com/repo/centos/main/noarch/
 
 %packages
 
@@ -21,14 +20,13 @@ risios-repositories
 risios-36-backgrounds
 risios-bookmarks
 webapp-manager
-mozilla-risiSearx
 risios-meta
 chromium
 
 # Applications
 drawing
 file-roller
-onlyoffice-desktopeditors
+
 
 # Removed
 -abrt-desktop
@@ -45,6 +43,7 @@ onlyoffice-desktopeditors
 -libreoffice*
 -unoconv
 -firefox
+-gnome-extensions-app
 
 
 %end
@@ -58,4 +57,18 @@ EOF
 
 # Prevent risiWelcome from popping up on Live Media
 printf "[io.risi.Welcome]\nstartup-show = false" >> /usr/share/glib-2.0/schemas/00_risi.gschema.override
+
+# Edit favorite apps on ISO
+
+cat >> /etc/rc.d/init.d/livesys << EOF
+rm /usr/share/glib-2.0/schemas/org.gnome.shell.gschema.override
+
+cat >> /usr/share/glib-2.0/schemas/org.gnome.shell.gschema.override << FOE
+[org.gnome.shell]
+favorite-apps=['chromium-browser.desktop', 'chromium-freeworld.desktop', 'org.gnome.Nautilus.desktop','org.gnome.Calendar.desktop', 'org.gnome.Photos.desktop', 'org.gnome.Totem.desktop', 'anaconda.desktop']
+FOE
+
+glib-compile-schemas /usr/share/glib-2.0/schemas
+EOF
+
 %end
