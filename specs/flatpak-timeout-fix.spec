@@ -9,7 +9,7 @@ Summary:        A .pp file to fix Flatpak on SELinux
 License:        GPL v3
 URL:            https://github.com/risiOS/risiOS-meta
 
-BuildRequires:  checkpolicy, selinux-policy-devel, /usr/share/selinux/devel/policyhelp, hardlink
+BuildRequires:  checkpolicy, selinux-policy-devel, hardlink
 %if "%{selinux_policyver}" != ""
 Requires:       selinux-policy >= %{selinux_policyver}
 %endif
