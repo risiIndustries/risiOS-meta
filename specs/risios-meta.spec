@@ -13,6 +13,7 @@ Requires:		risios-release
 Requires:		risifetch
 Requires:		zsh
 Requires:		risios-repositories
+Requires:  flatpak-timeout-fix
 
 Recommends:		risi-zsh-plugins
 Recommends:		adw-gtk-theme
