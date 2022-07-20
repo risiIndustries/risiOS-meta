@@ -57,7 +57,7 @@ do
 done
 cd -
 
-/usr/sbin/hardlink -cv %{buildroot}%{_datadir}/selinux
+/usr/bin/hardlink -cv %{buildroot}%{_datadir}/selinux
 
 %clean
 rm -rf %{buildroot}
