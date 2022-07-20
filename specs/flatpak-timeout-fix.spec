@@ -6,7 +6,6 @@ Name:           flatpak-timeout-fix
 Version:        1
 Release:        %autorelease
 Summary:        A .pp file to fix Flatpak on SELinux
-Description:	Fixes an issue where SELinux will not allow Flatpak to install a package.
 License:        GPL v3
 URL:            https://github.com/risiOS/risiOS-meta
 
@@ -16,6 +15,9 @@ Requires:       selinux-policy >= %{selinux_policyver}
 %endif
 Requires(post):   /usr/sbin/semodule, /sbin/fixfiles, flatpak
 Requires(postun): /usr/sbin/semodule
+
+%description
+Fixes an issue where SELinux will not allow Flatpak to install a package.
 
 %prep
 mkdir SELinux
