@@ -47,12 +47,10 @@ done
 cd -
 
 %install
-rm -rf %{buildroot}
-make DESTDIR=%{buildroot} install
-
 cd SELinux
 for selinuxvariant in %{selinux_variants}
 do
+  mkdir -p %{buildroot}%{_datadir}/selinux/${selinuxvariant}
   install -d %{buildroot}%{_datadir}/selinux/${selinuxvariant}
   install -p -m 644 %{modulename}.pp.${selinuxvariant} \
     %{buildroot}%{_datadir}/selinux/${selinuxvariant}/%{modulename}.pp
@@ -81,9 +79,8 @@ fi
 
 %files
 %defattr(-,root,root,0755)
-%doc ChangeLog AUTHOR COPYING SELinux/*
 %{_datadir}/selinux/*/%{modulename}.pp
 
 %changelog
-* Wed Jul 20 2022 Cameron <pizzalovingnerd@teknik.io> 1
+* Mon Jul 31 2006 John Doe <doe@example.com> 0.01-1
 - Initial version
