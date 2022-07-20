@@ -41,7 +41,7 @@ EOF
 for selinuxvariant in %{selinux_variants}
 do
   make NAME=${selinuxvariant} -f /usr/share/selinux/devel/Makefile
-  mv mymodule.pp mymodule.pp.${selinuxvariant}
+  mv flatpak-timeout-fix.pp flatpak-timeout-fix.pp.${selinuxvariant}
   make NAME=${selinuxvariant} -f /usr/share/selinux/devel/Makefile clean
 done
 cd -
@@ -85,5 +85,5 @@ fi
 %{_datadir}/selinux/*/%{modulename}.pp
 
 %changelog
-* Mon Jul 31 2006 John Doe <doe@example.com> 0.01-1
+* Wed Jul 20 2022 Cameron <pizzalovingnerd@teknik.io> 1
 - Initial version
