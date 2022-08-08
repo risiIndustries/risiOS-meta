@@ -1,10 +1,10 @@
-%global dashedversion   3-1
+%global dashedversion   3-5
 
 Name:		adw-gtk-theme
 # make sure to update dashedversion too
-Version:	3.1
+Version:	3.5
 Release:	2%{?dist}
-Summary:	GNOME Shell Extension - Dock From Dash by fthx
+Summary:	Gtk3 theme that matches the Gtk theme used in Libadwaita
 
 License:	GPLv2+
 URL:		https://github.com/lassekongo83/adw-gtk3
