@@ -15,7 +15,7 @@ URL:		https://extensions.gnome.org/extension/4703/dock-from-dash/
 Source0:	%{giturl}/archive/refs/tags/v%{version}.zip
 BuildArch:	noarch
 BuildRequires:  glib2
-Requires:	gnome-shell-extension-common
+Requires:	meson
 
 %description
 Dock for GNOME 40+. Does use native GNOME Shell Dash. Very light extension.
@@ -32,13 +32,10 @@ meson --prefix=/usr --localedir=share/gnome-shell/extensions/ding@rastersoft.com
 %install
 ninja -C .build install
 
-mkdir -p %{buildroot}%{_datadir}/gnome-shell/extensions/%{extuuid}
-mkdir -p %{buildroot}/usr/share/licenses/%{NAME}
-cp LICENSE %{buildroot}/usr/share/licenses/gnome-shell-extension-dock-from-dash/
-cp -ar * %{buildroot}%{_datadir}/gnome-shell/extensions/%{extuuid}
-
 %files
 %license LICENSE
+/usr/share/gnome-shell/extensions/ding@rastersoft.com/locale/es/
+/usr/share/gnome-shell/extensions/dock-from-dash@fthx/schemas/org.gnome.shell.extensions.dock-from-dash.gschema.xml
 %{extdir}
 
 %changelog
