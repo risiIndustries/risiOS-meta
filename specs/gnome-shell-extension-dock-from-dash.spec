@@ -15,7 +15,7 @@ URL:		https://extensions.gnome.org/extension/4703/dock-from-dash/
 Source0:	%{giturl}/archive/refs/tags/v%{version}.zip
 BuildArch:	noarch
 BuildRequires:  glib2
-Requires:	meson
+BuildRequires:	meson
 
 %description
 Dock for GNOME 40+. Does use native GNOME Shell Dash. Very light extension.
