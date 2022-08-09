@@ -39,5 +39,8 @@ ninja -C .build install
 %{extdir}
 
 %changelog
+* Tue Aug 09 2022 PizzaLovingNerd
+- Install using meson instead of manually
+
 * Thu Feb 24 2022 PizzaLovingNerd
 - Spec file built
