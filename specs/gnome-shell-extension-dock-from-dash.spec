@@ -7,7 +7,7 @@
 
 Name:		gnome-shell-extension-dock-from-dash
 Version:	56
-Release:	1%{?dist}
+Release:	2%{?dist}
 Summary:	GNOME Shell Extension - Dock From Dash by fthx
 
 License:	GPLv2+
