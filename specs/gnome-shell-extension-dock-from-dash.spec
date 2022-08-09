@@ -26,7 +26,12 @@ Native GNOME Shell click behavior is modified: minimize if one window is open, o
 %prep
 %autosetup -n dock-from-dash-%{version}
 
+%build
+meson --prefix=/usr --localedir=share/gnome-shell/extensions/ding@rastersoft.com/locale .build
+
 %install
+ninja -C .build install
+
 mkdir -p %{buildroot}%{_datadir}/gnome-shell/extensions/%{extuuid}
 mkdir -p %{buildroot}/usr/share/licenses/%{NAME}
 cp LICENSE %{buildroot}/usr/share/licenses/gnome-shell-extension-dock-from-dash/
