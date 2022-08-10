@@ -27,7 +27,7 @@ Native GNOME Shell click behavior is modified: minimize if one window is open, o
 %autosetup -n dock-from-dash-%{version}
 
 %build
-meson --prefix=/usr --localedir=share/gnome-shell/extensions/ding@rastersoft.com/locale .build
+meson --prefix=%{buildroot}%{_exec_prefix} --localedir=share/gnome-shell/extensions/ding@rastersoft.com/locale .build
 
 %install
 ninja -C .build install
