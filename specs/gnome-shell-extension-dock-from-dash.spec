@@ -34,7 +34,6 @@ ninja -C .build install
 
 %files
 %license LICENSE
-%{_datadir}/share/gnome-shell/extensions/dock-from-dash@fthx/schemas/org.gnome.shell.extensions.dock-from-dash.gschema.xml
 %{extdir}
 
 %changelog
