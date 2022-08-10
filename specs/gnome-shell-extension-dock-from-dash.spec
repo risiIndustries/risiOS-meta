@@ -34,8 +34,11 @@ ninja -C .build install
 
 %files
 %license LICENSE
-/usr/share/gnome-shell/extensions/ding@rastersoft.com/locale/es/
-/usr/share/gnome-shell/extensions/dock-from-dash@fthx/schemas/org.gnome.shell.extensions.dock-from-dash.gschema.xml
+%{_datadir}/gnome-shell/extensions/ding@rastersoft.com/locale/es/LC_MESSAGES/dock-from-dash.mo
+%{_datadir}/share/gnome-shell/extensions/ding@rastersoft.com/locale/fr/LC_MESSAGES/dock-from-dash.mo
+%{_datadir}/share/gnome-shell/extensions/ding@rastersoft.com/locale/nl/LC_MESSAGES/dock-from-dash.mo
+%{_datadir}/share/gnome-shell/extensions/ding@rastersoft.com/locale/ru/LC_MESSAGES/dock-from-dash.mo
+%{_datadir}/share/gnome-shell/extensions/dock-from-dash@fthx/schemas/org.gnome.shell.extensions.dock-from-dash.gschema.xml
 %{extdir}
 
 %changelog
