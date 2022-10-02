@@ -3,7 +3,7 @@
 %global modulename flatpak-timeout-fix
 
 Name:           flatpak-timeout-fix
-Version:        1
+Version:        2
 Release:        %autorelease
 Summary:        A .pp file to fix Flatpak on SELinux
 License:        GPL v3

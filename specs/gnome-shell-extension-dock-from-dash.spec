@@ -12,7 +12,8 @@ Summary:	GNOME Shell Extension - Dock From Dash by fthx
 
 License:	GPLv2+
 URL:		https://extensions.gnome.org/extension/4703/dock-from-dash/
-Source0:	%{giturl}/archive/refs/tags/v%{version}.zip
+# Source0:	%{giturl}/archive/refs/tags/v%{version}.zip
+Source0:    https://github.com/psydvl/dock-from-dash/archive/refs/heads/gnome-43.zip
 BuildArch:	noarch
 BuildRequires:  glib2
 BuildRequires:	meson
@@ -24,7 +25,8 @@ Hover the bottom of your screen and GNOME Shell dash will appear without overvie
 Native GNOME Shell click behavior is modified: minimize if one window is open, overview if many windows are open.
 
 %prep
-%autosetup -n dock-from-dash-%{version}
+# %autosetup -n dock-from-dash-%{version}
+%autosetup -n dock-from-dash-gnome-43
 
 %build
 meson --prefix=%{buildroot}%{_exec_prefix} --localedir=share/gnome-shell/extensions/ding@rastersoft.com/locale .build

@@ -1,5 +1,5 @@
 Name:           risios-bookmarks
-Version:        36
+Version:        37
 Release:        %autorelease
 Summary:        risiOS bookmarks
 License:        GFDL
