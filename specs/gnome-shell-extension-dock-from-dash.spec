@@ -25,7 +25,7 @@ Hover the bottom of your screen and GNOME Shell dash will appear without overvie
 Native GNOME Shell click behavior is modified: minimize if one window is open, overview if many windows are open.
 
 %prep
-# %autosetup -n dock-from-dash-%%{version}
+# %%autosetup -n dock-from-dash-%%{version}
 %autosetup -n dock-from-dash-gnome-43
 
 %build
