@@ -1,8 +1,8 @@
-%global dashedversion   3-5
+%global dashedversion   3-7
 
 Name:		adw-gtk-theme
 # make sure to update dashedversion too
-Version:	3.5
+Version:	3.7
 Release:	2%{?dist}
 Summary:	Gtk3 theme that matches the Gtk theme used in Libadwaita
 
