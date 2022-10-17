@@ -1,6 +1,7 @@
 %include fedora-live-workstation.ks
 
-repo --name="risiOS" --baseurl=https://download.copr.fedorainfracloud.org/results/risi/risiOS/fedora-36-$basearch --cost=1 --priority=50
+repo --name="risiOS" --baseurl=https://download.copr.fedorainfracloud.org/results/risi/risiOS/fedora-37-$basearch --cost=1 --priority=50
+repo --name="OnlyOffice" --baseurl=http://download.onlyoffice.com/repo/centos/main/noarch/
 
 %packages
 
@@ -17,16 +18,20 @@ risi-zsh-plugins
 risios-release
 risios-logos
 risios-repositories
-risios-36-backgrounds
+risios-backgrounds-37
 risios-bookmarks
 webapp-manager
 risios-meta
-chromium
+rtheme-lib
+rtheme-d
+rtheme-plugin-gtk3
+rtheme-plugin-gtk4
 
 # Applications
 drawing
 file-roller
-
+chromium
+onlyoffice-desktopeditors
 
 # Removed
 -abrt-desktop
@@ -44,7 +49,7 @@ file-roller
 -unoconv
 -firefox
 -gnome-extensions-app
-
+-systemd-networkd
 
 %end
 
