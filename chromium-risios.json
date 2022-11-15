@@ -6,7 +6,7 @@
 	"DefaultSearchProviderIconURL": "https://searx.risi.io/favicon.ico",
 	"DefaultSearchProviderKeyword": "rs",
 	"DefaultSearchProviderName": "risiSearx",
-	"DefaultSearchProviderNewTabURL": "https://start.risi.io",
+	"DefaultSearchProviderNewTabURL": "https://home.risi.io",
 	"DefaultSearchProviderSearchURL": "https://searx.risi.io/search?q={searchTerms}",
 	"DefaultSearchProviderSuggestURL": "https://searx.risi.io/autocompleter?q={searchTerms}",
 	"DefaultSearchProviderEnabled": true
