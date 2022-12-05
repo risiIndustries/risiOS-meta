@@ -1,3 +1,12 @@
+From edda6006812c7bec89aad880957c3a5406a1b318 Mon Sep 17 00:00:00 2001
+From: PizzaLovingNerd <pizzalovingnerd@teknik.io>
+Date: Sat, 3 Dec 2022 16:35:22 -0800
+Subject: Update copr.conf
+
+---
+ etc/dnf/plugins/copr.conf | 4 ++++
+ 1 file changed, 4 insertions(+)
+
 diff --git a/etc/dnf/plugins/copr.conf b/etc/dnf/plugins/copr.conf
 index bc29926..a90cf46 100644
 --- a/etc/dnf/plugins/copr.conf
@@ -14,3 +23,4 @@ index bc29926..a90cf46 100644
  # (protocol and port are optional and their default values are `https` and `443` respectively).
  # [name-of-hub]
 -- 
+2.38.1
