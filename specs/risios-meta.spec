@@ -13,7 +13,7 @@ Requires:		risios-release
 Requires:		risifetch
 Requires:		zsh
 Requires:		risios-repositories
-Requires:  		flatpak-timeout-fix
+Requires:  flatpak-timeout-fix
 
 Recommends:		risi-zsh-plugins
 Recommends:		adw-gtk-theme
@@ -27,7 +27,7 @@ Recommends:		rtheme-d
 Recommends:		rtheme-lib
 Recommends:		rtheme-plugin-gtk3
 Recommends:		rtheme-plugin-gtk4
-
+Recommends:		rtheme-plugin-gnome-shell
 
 %description
 Provides some extra files by default in the home dir.
