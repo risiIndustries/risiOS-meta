@@ -26,9 +26,9 @@ git clone https://gitlab.gnome.org/GNOME/libadwaita.git --branch libadwaita-%{da
 cd libadwaita
 meson . _build
 ninja -C _build
-cd _build
 
 %install
+cd libadwaita
 mkdir -p %{buildroot}%{_datadir}/themes/adw-gtk3
 mkdir -p %{buildroot}%{_datadir}/themes/adw-gtk3-dark
 cp -a _build/src/stylesheet %{buildroot}%{_datadir}/themes/adw-gtk3/gtk-4.0
