@@ -1,34 +1,26 @@
-%global dashedversion   4-0
-
 Name:		adw-gtk-theme
-# make sure to update dashedversion too
-Version:	4.0
-Release:	4%{?dist}
-Summary:	Gtk3 theme that matches the Gtk theme used in Libadwaita
+Version:	4.2
+Release:	5%{?dist}
+Summary:	Metapackage that installs adw-gtk3 and adw-gtk4
 
 License:	GPLv2+
 URL:		https://github.com/lassekongo83/adw-gtk3
-Source0:    https://github.com/lassekongo83/adw-gtk3/releases/download/v%{version}/adw-gtk3v%{dashedversion}.tar.xz
+
+Requires: adw-gtk3
+Requires: adw-gtk4
 
 BuildArch:	noarch
 
 %description
-The default theme from libadwaita ported to GTK-3
-
-Note that this is not a 100% accurate port.
+Metapackage that installs adw-gtk3 and adw-gtk4
 
 %prep
-%autosetup -cn adw-gtk3v%{dashedversion}
-
 %install
-mkdir -p %{buildroot}%{_datadir}/themes
-cp -R adw-gtk3 %{buildroot}%{_datadir}/themes/adw-gtk3
-cp -R adw-gtk3-dark %{buildroot}%{_datadir}/themes/adw-gtk3-dark
-
 %files
-%{_datadir}/themes/adw-gtk3
-%{_datadir}/themes/adw-gtk3-dark
 
 %changelog
+* Sat Feb 4 2023 PizzaLovingNerd
+- Converted to metapackage
+
 * Wed Mar 2 2022 PizzaLovingNerd
 - Spec file built
