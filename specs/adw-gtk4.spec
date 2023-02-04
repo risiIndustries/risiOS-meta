@@ -35,8 +35,8 @@ cp -a _build/src/stylesheet %{buildroot}%{_datadir}/themes/adw-gtk3/gtk-4.0
 cp -a _build/src/stylesheet %{buildroot}%{_datadir}/themes/adw-gtk3-dark/gtk-4.0
 mv %{buildroot}%{_datadir}/themes/adw-gtk3/gtk-4.0/base.css %{buildroot}%{_datadir}/themes/adw-gtk3/gtk-4.0/gtk.css
 mv %{buildroot}%{_datadir}/themes/adw-gtk3-dark/gtk-4.0/base.css %{buildroot}%{_datadir}/themes/adw-gtk3-dark/gtk-4.0/gtk.css
-sed -i '1s/^/@import url("/usr/share/themes/adw-gtk3-dark/gtk-4.0/defaults-dark.css");\n/' %{buildroot}%{_datadir}/themes/adw-gtk3/gtk-4.0/gtk.css
-sed -i '1s/^/@import url("/usr/share/themes/adw-gtk3-dark/gtk-4.0/defaults-dark.css");\n/' %{buildroot}%{_datadir}/themes/adw-gtk3-dark/gtk-4.0/gtk.css
+sed -i '1 i\@import url("/usr/share/themes/adw-gtk3-dark/gtk-4.0/defaults-light.css");\n' %{buildroot}%{_datadir}/themes/adw-gtk3/gtk-4.0/gtk.css
+sed -i '1 i\@import url("/usr/share/themes/adw-gtk3-dark/gtk-4.0/defaults-dark.css");\n' %{buildroot}%{_datadir}/themes/adw-gtk3-dark/gtk-4.0/gtk.css
 
 %files
 %{_datadir}/themes/adw-gtk3/gtk-4.0/
