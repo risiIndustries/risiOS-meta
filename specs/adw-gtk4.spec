@@ -1,6 +1,7 @@
 Name:           adw-gtk4
 # Match Libadwaita Version
 Version:        1.2
+%global dashedversion   1-2
 Release:        1%{?dist}
 Summary:        The theme from libadwaita ported to stock GTK-4
 License:        GPLv2+
@@ -19,7 +20,7 @@ Requires: adw-gtk3
 The theme from libadwaita ported to stock GTK-4
 
 %prep
-git clone https://gitlab.gnome.org/GNOME/libadwaita.git --branch libadwaita-${%{version}/./-}
+git clone https://gitlab.gnome.org/GNOME/libadwaita.git --branch libadwaita-%{dashedversion}
 
 %build
 cd libadwaita
