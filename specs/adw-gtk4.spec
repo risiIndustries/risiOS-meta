@@ -1,5 +1,6 @@
 Name:           adw-gtk4
-Version:        1.2 # Match Libadwaita Version
+# Match Libadwaita Version
+Version:        1.2
 Release:        1%{?dist}
 Summary:        The theme from libadwaita ported to stock GTK-4
 License:        GPLv2+
