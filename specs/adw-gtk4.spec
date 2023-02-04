@@ -27,6 +27,8 @@ ninja -C _build
 cd _build
 
 %install
+mkdir -p %{buildroot}%{_datadir}/themes/adw-gtk3
+mkdir -p %{buildroot}%{_datadir}/themes/adw-gtk3-dark
 cp -a _build/src/stylesheet %{buildroot}%{_datadir}/themes/adw-gtk3/gtk-4.0
 cp -a _build/src/stylesheet %{buildroot}%{_datadir}/themes/adw-gtk3-dark/gtk-4.0
 mv %{buildroot}%{_datadir}/themes/adw-gtk3/gtk-4.0/base.css %{buildroot}%{_datadir}/themes/adw-gtk3/gtk-4.0/gtk.css
