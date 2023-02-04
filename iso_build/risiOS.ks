@@ -1,6 +1,6 @@
 %include fedora-live-workstation.ks
 
-repo --name="risiOS" --baseurl=https://download.copr.fedorainfracloud.org/results/risi/risiOS/fedora-37-$basearch --cost=1 --priority=50
+repo --name="risiOS" --baseurl=https://download.copr.fedorainfracloud.org/results/risi/risiOS/fedora-rawhide-$basearch --cost=1 --priority=50
 repo --name="OnlyOffice" --baseurl=http://download.onlyoffice.com/repo/centos/main/noarch/
 
 %packages
