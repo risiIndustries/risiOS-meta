@@ -1,5 +1,5 @@
 Name:		adw-gtk-theme
-Version:	99
+Version:	4.3
 Release:	5%{?dist}
 Summary:	Metapackage that installs adw-gtk3 and adw-gtk4
 
