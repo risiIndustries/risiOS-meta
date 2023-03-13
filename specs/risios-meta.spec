@@ -1,10 +1,10 @@
 Name:           risios-meta
-Version:        38
+Version:        39
 Release:        9%{?dist}
 Summary:        General files for risiOS
 License:        GPL3
 URL:            http://risi.io/
-Source0:        https://github.com/risiOS/risiOS-meta/archive/refs/heads/main.tar.gz
+Source0:        https://github.com/risiOS/risiOS-meta/archive/refs/heads/fragile.tar.gz
 BuildArch:      noarch
 
 Requires:		risios-bookmarks
@@ -33,7 +33,7 @@ Recommends:		risi-welcome
 Provides some extra files by default in the home dir.
  
 %prep
-%autosetup -n risiOS-meta-main
+%autosetup -n risiOS-meta-fragile
 
 %build
 %install
