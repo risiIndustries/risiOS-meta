@@ -1,6 +1,6 @@
 Name:           risios-meta
 Version:        38
-Release:        9%{?dist}
+Release:        10%{?dist}
 Summary:        General files for risiOS
 License:        GPL3
 URL:            http://risi.io/
@@ -39,6 +39,7 @@ Provides some extra files by default in the home dir.
 %install
 %{__mkdir_p} %{buildroot}%{_sysconfdir}/chromium/policies/recommended
 
+cp gnome-initital-setup.conf %{buildroot}%{_sysconfdir}/gnome-initial-setup/vendor.conf
 cp -a skel %{buildroot}%{_sysconfdir}
 cp chromium-risios.json %{buildroot}%{_sysconfdir}/chromium/policies/recommended/risios.json
 
@@ -46,6 +47,7 @@ cp chromium-risios.json %{buildroot}%{_sysconfdir}/chromium/policies/recommended
 %{_sysconfdir}/chromium/policies/recommended/risios.json
 %dir %{_sysconfdir}/skel/Templates
 %{_sysconfdir}/skel/Templates/*
+%{_sysconfdir}/gnome-initial-setup/vendor.conf
  
 %changelog
 %autochangelog
