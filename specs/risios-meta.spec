@@ -40,7 +40,7 @@ Provides some extra files by default in the home dir.
 %{__mkdir_p} %{buildroot}%{_sysconfdir}/chromium/policies/recommended
 %{__mkdir_p} %{buildroot}%{_sysconfdir}/gnome-initial-setup
 
-cp gnome-initital-setup.conf %{buildroot}%{_sysconfdir}/gnome-initial-setup/vendor.conf
+cp gnome-initial-setup.conf %{buildroot}%{_sysconfdir}/gnome-initial-setup/vendor.conf
 cp -a skel %{buildroot}%{_sysconfdir}
 cp chromium-risios.json %{buildroot}%{_sysconfdir}/chromium/policies/recommended/risios.json
 
