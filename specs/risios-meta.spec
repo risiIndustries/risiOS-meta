@@ -1,6 +1,6 @@
 Name:           risios-meta
 Version:        38
-Release:        10%{?dist}
+Release:        11%{?dist}
 Summary:        General files for risiOS
 License:        GPL3
 URL:            http://risi.io/
@@ -21,7 +21,6 @@ Requires:		rtheme-plugin-gtk4
 Requires:		rtheme-plugin-gnome-shell
 
 Recommends:		risi-zsh-plugins
-Recommends:		adw-gtk-theme
 Recommends: 	gnome-shell-extension-dock-from-dash
 Recommends: 	gnome-shell-extension-risi-gnome
 Recommends: 	risi-script
