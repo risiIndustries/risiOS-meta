@@ -20,7 +20,6 @@ EOF
 %install
 mkdir -p %{buildroot}%{_datadir}/dnf/plugins
 install -m 655 copr.vendor.conf %{buildroot}%{_datadir}/dnf/plugins/copr.vendor.conf
-/usr/share/dnf/plugins/copr.vendor.conf
 
 %files
 %{_datadir}/dnf/plugins/copr.vendor.conf
