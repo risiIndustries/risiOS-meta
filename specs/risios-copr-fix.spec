@@ -1,6 +1,6 @@
 Name:           risios-copr-fix
 Version:        38
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Copr fix
 License:        GPL3
 URL:            http://risi.io/
@@ -13,7 +13,7 @@ Adds a copr vendor config to use Fedora copr repos
 %build
 cat > copr.vendor.conf <<EOF
 [main]
-distribution = fedora
+distribution = Fedora
 releasever = 38
 EOF
 
