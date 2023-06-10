@@ -1,11 +1,11 @@
 stable:
-  release: 37
+  release: 38
 
 beta:
-  release: 37
+  release: 38
   
 unstable:
   release: rawhide
   
 eol:
-  end_of_life: [35]
+  end_of_life: [35, 36]
