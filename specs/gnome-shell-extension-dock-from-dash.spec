@@ -2,12 +2,12 @@
 %global extdir		%{_datadir}/gnome-shell/extensions/%{extuuid}
 %global gschemadir	%{_datadir}/glib-2.0/schemas
 %global gitname		dock-from-dash
-%global giturl		https://github.com/fthx/%{gitname}
+%global giturl		https://github.com/risiIndustries/%{gitname}
 %global srcdir		%{_builddir}/%{gitname}-%{version}/src
 
 Name:		gnome-shell-extension-dock-from-dash
 Version:	63
-Release:	3%{?dist}
+Release:	4%{?dist}
 Summary:	GNOME Shell Extension - Dock From Dash by fthx
 
 License:	GPLv2+
