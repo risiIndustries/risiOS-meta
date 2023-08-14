@@ -1,6 +1,6 @@
 Name:           risios-meta
-Version:        38
-Release:        11%{?dist}
+Version:        38.1
+Release:        12%{?dist}
 Summary:        General files for risiOS
 License:        GPL3
 URL:            http://risi.io/

@@ -3,11 +3,11 @@
 		"UTF-8",
 		"UTF-16"
 	],
-	"DefaultSearchProviderIconURL": "https://searx.risi.io/favicon.ico",
+	"DefaultSearchProviderIconURL": "https://duckduckgo.com/favicon.ico",
 	"DefaultSearchProviderKeyword": "rs",
-	"DefaultSearchProviderName": "risiSearx",
+	"DefaultSearchProviderName": "DuckDuckGo",
 	"DefaultSearchProviderNewTabURL": "https://home.risi.io",
-	"DefaultSearchProviderSearchURL": "https://searx.risi.io/search?q={searchTerms}",
-	"DefaultSearchProviderSuggestURL": "https://searx.risi.io/autocompleter?q={searchTerms}",
+	"DefaultSearchProviderSearchURL": "https://duckduckgo.com/&q={searchTerms}",
+	"DefaultSearchProviderSuggestURL": "https://duckduckgo.com/ac/?q={searchTerms}&type=list",
 	"DefaultSearchProviderEnabled": true
 }
